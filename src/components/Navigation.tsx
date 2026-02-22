@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navigation() {
@@ -10,11 +11,16 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo - Official Wordmark */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl md:text-3xl font-light tracking-tight-heading text-saola-orange">
-              saola
-            </span>
+            <Image
+              src="/logos/saola-wordmark-black.png"
+              alt="Saola"
+              width={120}
+              height={40}
+              className="h-8 md:h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

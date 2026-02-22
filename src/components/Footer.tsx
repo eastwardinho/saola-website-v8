@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,9 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Brand */}
           <div>
-            <span className="text-3xl font-light tracking-tight-heading text-saola-orange">
-              saola
-            </span>
+            <Image
+              src="/logos/saola-wordmark-white.png"
+              alt="Saola"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
             <p className="mt-4 text-sm text-white/70 leading-relaxed max-w-xs">
               Vietnam&apos;s first Interior Design and Lighting retailer. 
               Designed and Made in Vietnam, for Vietnam.
